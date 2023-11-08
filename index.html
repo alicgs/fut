@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="infos">
+        Adaletin bittiği yerde çArşının Anarşisi başlar!<br />
+        
+    </p>
+    
+    <div class="table-container" style="--data-limit: 9">
+        <div class="table" id="table-0" data-limit="9">
+            <div class="table-row table-heading">
+                <div class="table-col">
+         
+                </div>
+                <div class="table-col" id="remowHome">
+                    Beşiktaş
+                </div>
+                <button onclick="remowHomeClick()" id=""   class="remow"><img src="img/refresh (1).png" alt=""></button>
+                <div class="table-col">
+         
+                </div>
+                <div class="table-col">
+            
+                </div>
+                <div class="table-col" id="remowGuest">
+                    Galatasaray
+                </div>
+                <button onclick="remowGuestClick()" id=""  class="remow2"><img src="img/refresh (1).png" alt=""></button>
+            </div>
+            <div class="table-row" data-copy="103">
+                <div class="table-col">
+                    <span class="auto-increment"></span>
+                </div>
+                <div class="table-col">
+                    <span class="auto-firstname" id="scoreHome">1</span>
+                </div>
+                <div class="table-col">
+                    <span class="auto-lastname"></span>
+                </div>
+                <div class="table-col">
+                    <span class="auto-title"></span>
+                </div>
+                <div class="table-col">
+                    <span class="auto-integer" min="0" max="250" id="scoreGuest">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="pagination-container">
+            <div class="d-flex row flex-fill align-items-end justify-content-center">
+                <span class="pagination-info"></span>
+                <button class="pagination-extreme pagination-left">
+                    <i class="fa-solid fa-angles-left"></i>
+                </button>
+                <button class="pagination-extreme pagination-left-one">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <div class="d-flex flex-fill justify-content-center">
+                    <div class="pagination-wrapper">
+                        <ul class="pagination" data-table="table-0"></ul>
+                    </div>
+                </div>
+                <button class="pagination-extreme pagination-right-one">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <button class="pagination-extreme pagination-right">
+                    <i class="fa-solid fa-angles-right"></i>
+                </button>
+            </div>
+        </div>
+        <button onclick="remowHome()" id="touch1">Gol -1</button>
+        <button onclick="setGoalScore()" id="touch2">Gol sayısı</button>
+        <button onclick="remowGuest()" id="touch3">Gol -1</button>
+        <button onclick="setGoalScoreS()" id="touch4">Gol sayısı</button>
+        <button onclick="addOneHome()" id="touch5">Gol +1</button>
+        <button onclick="addOneGuest()" id="touch6">Gol +1</button>
+        <div class="progress-bar">
+            <div class="progress-point"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
